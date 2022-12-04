@@ -23,13 +23,14 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - id: WP
         name: WP
-        run: |
-          pwd
-          ls
         env:
           LEVEL: ${{ inputs.logLevel }}
           TAGS: ${{ inputs.tags }}
           ENVIRONMENT: ${{ inputs.environment }}
+        run: |
+          pwd
+          ls
+          echo "Environment: $ENVIRONMENT"
         shell: bash 
 
  # Add new files in folder, commit along with other modified files, push
