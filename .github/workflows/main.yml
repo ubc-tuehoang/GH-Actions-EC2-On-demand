@@ -42,7 +42,7 @@ jobs:
         #  aws-region: ${{ secrets.AWS_REGION }}
       - name: Start EC2 runner
         id: start-ec2-runner
-        uses: ubc-tuehoang/ec2-github-runner@v1
+        #uses: ubc-tuehoang/ec2-github-runner@v1
         #with:
         #  mode: start
         #  github-token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
